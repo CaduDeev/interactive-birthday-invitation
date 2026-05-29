@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anthony faz 1 aninho — O Rei Leão</title>
+  <meta name="description" content="Convite do Anthony — 1 aninho" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section id="intro" class="intro-screen">
+    <video id="introVideo" class="intro-video" playsinline preload="auto">
+      <source src="assets/intro.mp4" type="video/mp4" />
+    </video>
+    <div class="intro-overlay"></div>
+    <button id="playIntro" class="play-intro">Toque para ouvir</button>
+    <button id="skipIntro" class="skip-intro">Pular</button>
+  </section>
+
+  <main id="site" class="site hidden">
+    <section class="hero">
+      <img src="assets/savanna-hero.jpg" class="hero-bg" alt="Savana africana ao pôr do sol">
+      <div class="hero-vignette"></div>
+      <img src="assets/acacia.png" class="acacia" alt="">
+      <div class="hero-content">
+        <img src="assets/sun-emblem.png" class="sun" alt="">
+        <p class="eyebrow">O Ciclo da Vida começa</p>
+        <h1>Anthony</h1>
+        <div class="age-row"><span></span><strong>1 aninho</strong><span></span></div>
+        <p class="quote">“Desde o dia em que chegamos ao planeta… há mais o que ver do que se pode ver, mais o que fazer do que se pode fazer.”</p>
+        <a href="#rsvp" class="main-btn">Confirmar presença</a>
+      </div>
+    </section>
+
+    <section class="details section-dark">
+      <div class="divider"></div>
+      <p class="eyebrow">Hakuna Matata</p>
+      <h2>Uma celebração digna do Pride Rock</h2>
+      <div class="cards">
+        <article class="detail-card"><div class="icon">📅</div><small>Data</small><strong>19 de Julho</strong></article>
+        <article class="detail-card"><div class="icon">⏰</div><small>Hora</small><strong>12h</strong></article>
+        <article class="detail-card"><div class="icon">📍</div><small>Local</small><strong>Salão de Festas</strong></article>
+      </div>
+      <article class="address-card">
+        <div class="icon">📍</div>
+        <small>Endereço</small>
+        <p>Rua Quatro, R. Fernão de Magalhães, Nº 2 — Campo Grande, Rio de Janeiro</p>
+        <a target="_blank" href="https://maps.google.com/?q=Rua%20Quatro%2C%20R.%20Fern%C3%A3o%20de%20Magalh%C3%A3es%2C%20N%C2%BA%202%20%E2%80%94%20Campo%20Grande%2C%20Rio%20de%20Janeiro">Abrir no mapa →</a>
+      </article>
+    </section>
+
+    <section id="rsvp" class="rsvp section-dark">
+      <div class="divider"></div>
+      <p class="eyebrow">Circle of Life</p>
+      <h2>Confirme sua presença</h2>
+      <p class="muted" id="rsvpIntroText">Acesse pelo link privado ou digite o código do convite.</p>
+
+      <div id="codeBox" class="panel code-panel hidden">
+        <h3>Acesso privado</h3>
+        <p class="muted">Digite o código recebido no convite.</p>
+        <div class="code-line">
+          <input id="codeInput" placeholder="Ex: ANTHONY2026" autocomplete="off">
+          <button id="accessByCode">Acessar</button>
+        </div>
+        <p id="codeError" class="error"></p>
+      </div>
+
+      <div id="familyPanel" class="panel family-panel hidden">
+        <div class="panel-top">
+          <div>
+            <small>Convidado</small>
+            <h3 id="familyTitle"></h3>
+            <p id="familyCount" class="muted"></p>
+          </div>
+          <button id="changeFamily" class="ghost-btn">Trocar</button>
+        </div>
+
+        <div id="alreadyAnswered" class="already hidden"></div>
+
+        <div id="rsvpForm">
+          <p class="question">Quem da família vai comparecer?</p>
+          <div id="membersList" class="members-list"></div>
+          <p id="selectedCount" class="selected-count"></p>
+
+          <label class="message-label" for="message">Recado para o Anthony (opcional)</label>
+          <textarea id="message" maxlength="500" rows="3" placeholder="Mande um carinho para o aniversariante..."></textarea>
+
+          <button id="confirmRsvp" class="submit-btn">Enviar confirmação</button>
+        </div>
+      </div>
+
+      <div id="thanksPanel" class="panel thanks-panel hidden">
+        <div class="party">🎉</div>
+        <h3>Obrigado por confirmar!</h3>
+        <p id="thanksText"></p>
+      </div>
+    </section>
+
+    <footer>
+      <img src="assets/sun-emblem.png" alt="">
+      <p>Esperamos você!</p>
+      <small>Feito com carinho para o Anthony</small>
+    </footer>
+  </main>
+
+  <script src="familias.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

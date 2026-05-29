@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin — Confirmações Anthony</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="admin-body">
+  <main class="admin-shell">
+    <section id="loginAdmin" class="admin-login panel">
+      <h1>Admin</h1>
+      <p class="muted">Painel privado das confirmações.</p>
+      <input id="adminPass" type="password" placeholder="Senha do admin">
+      <button id="adminLoginBtn">Entrar</button>
+      <p id="adminLoginError" class="error"></p>
+    </section>
+
+    <section id="adminPanel" class="hidden">
+      <header class="admin-header">
+        <div>
+          <p class="eyebrow">Painel privado</p>
+          <h1>Confirmações — Anthony 1 ano</h1>
+          <p class="muted">Veja quem confirmou, quem não vai e quem ainda não respondeu.</p>
+        </div>
+        <a class="ghost-btn" href="index.html">Ver convite</a>
+      </header>
+
+      <section class="stats-grid">
+        <article><strong id="totalGuests">0</strong><span>Total de convidados</span></article>
+        <article><strong id="totalGoing">0</strong><span>Vão comparecer</span></article>
+        <article><strong id="totalNotGoing">0</strong><span>Não vão</span></article>
+        <article><strong id="totalPending">0</strong><span>Pendentes</span></article>
+      </section>
+
+      <div class="admin-actions">
+       <button id="reset-btn">🦁 Reiniciar Confirmações</button>
+        <button id="tabAll" class="tab active">Todos</button>
+        <button id="tabGoing" class="tab">Confirmados</button>
+        <button id="tabNotGoing" class="tab">Não vão</button>
+        <button id="tabPending" class="tab">Pendentes</button>
+        <button id="exportCsv" class="export-btn">Exportar CSV/Excel</button>
+        <button id="exportDoc" class="export-btn">Exportar Word</button>
+      </div>
+
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Família</th>
+              <th>Código</th>
+              <th>Link privado</th>
+              <th>Vai</th>
+              <th>Não vai</th>
+              <th>Pendente</th>
+              <th>Mensagem</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+          <tbody id="adminRows"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="familias.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
