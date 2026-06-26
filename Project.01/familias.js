@@ -1,6 +1,6 @@
 const FAMILIAS = [
   { key: "vovo-rose", codigo: "ROSE2026", title: "Vovó Rose", members: ["Vovó Rose", "Vovô Zé"] },
-  {key: "vovó Miria", codigo: "MIRIA2026", title: "Vovó Mira", members: ["Vovó Miria"] },
+  {key: "vovó Miria", codigo: "MIRIA2026", title: "Vovó Mira", members: ["Vovó Miria", "Esposo"] },
   { key: "elienai", codigo: "ELIENAI2026", title: "Família do Elienai", members: ["Elienai", "Isabella", "Castorina"] },
   { key: "william", codigo: "WILLIAM2026", title: "Família do William", members: ["William", "Lucas", "Pryscila"] },
   { key: "selma", codigo: "SELMA2026", title: "Família da Selma", members: ["Selma", "Matheus"] },
@@ -19,8 +19,24 @@ const FAMILIAS = [
   { key: "maria-lucia", codigo: "LUCIA2026", title: "Família da Maria Lúcia", members: ["Maria Lúcia", "Natália", "Namorado da Natália", "Thalita"] },
   { key: "isis", codigo: "ISIS2026", title: "Família da Isis", members: ["Isis", "Sophia", "Arthur"] },
   { key: "juliana", codigo: "JULIANA2026", title: "Família da Juliana", members: ["Medina", "Júlia", "Davi", "Daniela"] },
-  { key: "lili", codigo: "LILI2026", title: "Família da Lili", members: ["Lili", "Josué", "Poliana", "Rejane"] },
-  { key: "lombardi", codigo: "LOMBARDI2026", title: "Família do Lombardi", members: ["Lombardi", "Edilza", "Isabela e Namorado", "José Augusto"] },
+  { key: "lili", codigo: "LILI2026", title: "Família da Lili", members: ["Lili", "Josué"] },
+  { key: "lombardi", codigo: "LOMBARDI2026", title: "Família do Lombardi", members: ["Lombardi", "Edilza", "Isabela", "José Augusto"] },
   { key: "quiel", codigo: "QUIEL2026", title: "Família do Quiel", members: ["Quiel", "Lenî/neném", "Marido da Lívia", "Laís e Namorado"] },
   { key: "mariele", codigo: "MARIELE2026", title: "Família da Mariele", members: ["Mariele", "Julio Cesar"] },
+  { key: "Rejane", codigo: "REJANE2026", title: "Rejane", members: ["Rejane"] },
+  { key: "Poliana", codigo: "POLIANA2026", title: "Poliana", members: ["Poliana"] },
+  { key: "Lucas", codigo: "LUCAS2026", title: "Lucas", members: ["Lucas","Rosana"] },
+  { key: "Guilherme", codigo: "GUILHERME2026", title: "Guilherme", members: ["Guilherme","Pai do Guilherme"] },
+  { key: "Igor", codigo: "IGOR2026", title: "Família do Igor", members: ["Igor","Bernardo","Alexia"] },
+  { key: "Daine", codigo: "DAINE2026", title: "Família da Daine", members: ["Daine","Klear","Társila"] },
+  { key: "Gabriela", codigo: "GABRIELA2026", title: "Família da Gabriela", members: ["Gabriela","Marido","Miguel","Filha"] },
+  { key: "Camila", codigo: "CAMILA2026", title: "Família da Camila", members: ["Camila","Manu"] },
+  { key: "Elisa", codigo: "ELISA2026", title: "Família da Elisa", members: ["Elisa","Dorisval"] },
+  { key: "Sara", codigo: "SARA2026", title: "Sara", members: ["Sara"] },
+  { key: "Brenda", codigo: "BRENDA2026", title: "Brenda", members: ["Brenda"] },
+
+
+
+  
+  
 ];
