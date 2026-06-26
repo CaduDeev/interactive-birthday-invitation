@@ -36,7 +36,5 @@ const FAMILIAS = [
   { key: "Brenda", codigo: "BRENDA2026", title: "Brenda", members: ["Brenda"] },
 
 
-
-  
-  
+    
 ];
